@@ -2,7 +2,7 @@
   "name": "shoppingoct930vel",
   "version": "0.0.0",
   "engines": {
-    "node": "16.13.1"
+    "node": ">=20.0.0"
   },
   "scripts": {
     "ng": "ng",
