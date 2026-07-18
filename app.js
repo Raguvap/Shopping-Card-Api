@@ -12,7 +12,7 @@ var db;
 
 const dbConnection = function() {
     console.log('inside db conn');
-    const uri = "mongodb+srv://gopi:gopi@mycluster.csmbn.mongodb.net/shoppingcartOct930vel?retryWrites=true&w=majority";
+    const uri = "mongodb://gopi:gopi@mycluster-shard-00-00.csmbn.mongodb.net:27017,mycluster-shard-00-01.csmbn.mongodb.net:27017,mycluster-shard-00-02.csmbn.mongodb.net:27017/shoppingcartOct930vel?ssl=true&replicaSet=MyCluster-shard-0&authSource=admin&retryWrites=true&w=majority";
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     client.connect(err => {
         console.log('connecting..');
